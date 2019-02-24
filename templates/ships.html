@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% for ship in ships %}
+    <h2><a href='positions/{{ ship[0] }}'>Ship name: {{ ship[1] }}, imo: {{ ship[0] }}</a></h2>
+  {% endfor %}
+{% endblock content %}
